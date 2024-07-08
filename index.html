@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EnChanceWeb🧙</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #688ba3; /* Initial background color */
+			animation: background-loop 5s ease-in-out infinite; /* Add animation */
+			color: #688ba3;
+			background: url(asset/home_background.png);
+		}
+
+		header {
+			background-color: #5382c9; /* Green header background */
+			padding: 1em;
+			text-align: center;
+			color: white; /* White text on green background */
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Add a shadow to the header */
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap; /* Allow items to wrap to the next line */
+			gap: 10px; /* Add a gap between items */
+		}
+
+		nav li {
+			margin-right: 0; /* Remove margin right */
+			flex: 1; /* Make items take up equal space */
+		}
+
+		nav a {
+			color: white; /* White text on green background */
+			text-decoration: none;
+			padding: 8px 16px; /* Add padding to the links */
+			border-radius: 5px; /* Add a rounded corner to the links */
+			transition: background-color 0.3s ease; /* Animate background color on hover */
+		}
+
+		nav a:hover {
+			background-color: #45a049; /* Change background color on hover */
+		}
+
+		main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 2em;
+			background-color: #f0f0f0; /* White background for the main content */
+			border-radius: 10px; /* Add a rounded corner to the main content */
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Add a shadow to the main content */
+			animation: fadeIn 1s; /* Animate the main content */
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
+		h1 {
+			font-size: 28px; /* Font size for the title */
+			margin-bottom: 10px;
+			color: #4CAF50; /* Green text for the title */
+			animation: bounce 1s; /* Animate the title */
+		}
+
+		@keyframes bounce {
+			0% {
+				transform: translateY(-10px);
+			}
+			100% {
+				transform: translateY(0);
+			}
+		}
+
+		p {
+			font-size: 16px; /* Font size for the paragraph */
+			line-height: 1.5;
+			text-align: center;
+			animation: slideIn 1s; /* Animate the paragraph */
+		}
+
+		@keyframes slideIn {
+			0% {
+				transform: translateX(-10px);
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+		@keyframes background-loop {
+			0% {background-position: 0% 0%}
+			50% {background-position: 100% 100%}
+			100% {background-position: 0% 0%}
+		}
+	</style>
+</head>
+<body>
+<header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<h1>Học tiếng Anh cùng queenrefall🧙</h1>
+	<p>EnChance</p>
+</main>
+
+<script>
+	// Animate the background position on scroll
+	window.addEventListener('scroll', () => {
+		const scrollPosition = window.scrollY;
+		const backgroundPosition = `0% ${scrollPosition / 2}px`;
+		document.body.style.backgroundPosition = backgroundPosition;
+	});
+</script>
+
+</body>
+</html>
